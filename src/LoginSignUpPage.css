@@ -1,0 +1,125 @@
+.login-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    object-fit: contain;
+    margin-left:auto;
+    margin-right: auto;
+   
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:white;
+    height: 100vh;
+}
+
+.hrpara{
+    width: 100%;
+    border-bottom: 1px solid black;
+    align-items: center;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.hrspan{
+    background: white;
+    padding: 0 10px;
+   margin-left: 85px;
+}
+
+.login-container{
+    width: 300px;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+  
+}
+
+.login-container h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container h5{
+    margin-bottom: 5px;
+}
+
+.emailInput{
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+    border: 1px solid;
+    border-radius: 4px;
+   
+}
+
+.login-container p {
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.login-signInButtom{
+    width: 100%;
+    background-color: rgb(255, 196, 0) ;
+    border: 1px solid;
+    padding: 9px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.link{
+    cursor: pointer;
+    color: rgb(39, 39, 255);
+}
+
+.login-signInButtom:hover{
+    background-color: rgb(245, 170, 8);
+    
+}
+
+.login-signInButtom:active{
+    opacity: 0.8;
+}
+
+.signUp-Button{
+    width: 100%;
+    padding: 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid;
+    border-color: darkgray;
+}
+
+.signUp-Button:active{
+    opacity: 0.5;
+}
+
+.hideUnhideIcon{
+    float: right;
+    transform: translateY(-50%); 
+    margin-top: -27px;
+    margin-right: 7px;
+  
+    
+ 
+}
+
+.passInput{
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+    border: 1px solid;
+    border-radius: 4px;
+    
+    
+}

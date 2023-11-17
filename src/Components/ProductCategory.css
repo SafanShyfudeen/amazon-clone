@@ -1,0 +1,95 @@
+.imagephone{
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    width: 15%;
+   margin: auto;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 20px;
+    object-fit: contain;
+    margin-left: 50px;
+    height: 225px;
+
+}
+.productTotal{
+    display: flex;
+    width: 86%;
+    margin-left: 80px;
+}
+
+.product1{
+  
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    width: 75%;
+   margin: auto;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.product-info1{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.star{
+    color: #e9a44a;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.CardToBuy{
+    margin: 5px;
+    border: none;
+    padding: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(250, 226, 9);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.buyButton{
+    margin: 5px;
+    background-color: #e9a44a;
+    border: none;
+    padding: 8px;
+    padding-left: 49px;
+    padding-right: 49px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.span2{
+    text-decoration: line-through;
+    font-size: small;
+    margin: 2px;
+    color: rgb(62, 70, 66);
+}
+.span1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.small{
+    font-size: small;
+    margin: 2px;
+    color: rgb(62, 70, 66);
+    padding-left: 5px;
+}
+

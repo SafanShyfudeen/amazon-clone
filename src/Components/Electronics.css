@@ -1,0 +1,17 @@
+.main{
+    background-color: white;
+   
+}
+
+.optionimage{
+    object-fit: contain;
+    height: 180px;
+    margin: 30px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.optionTitle{
+ text-align: center;
+ font-size: 30px
+}

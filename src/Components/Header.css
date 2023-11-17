@@ -1,0 +1,130 @@
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100px;
+}
+
+.header-logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.header-search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+   
+}
+
+.header-searchIcon{
+    background-color: #e9a44a;
+    color: black;
+    padding: 5px;
+    height: 22px;
+    margin-right: 8px ;
+    border-radius: 0 7px 7px 0;
+}
+
+.header-searchInput{
+  height: 12px;
+  padding: 11px;
+  border: none;
+  width: 100%;
+  border-radius: 7px 0 0 7px;
+}
+
+header-searchInput:onclick{
+    border: none;
+    border:  #e9a44a solid 3px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    margin-top: 5px;
+   
+   
+  
+}
+
+.header-optionLineOne{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: inherit;
+    margin-left:20px ;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.header-optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    margin-left:20px ;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.header-option{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header-optionBasket{
+    color: white;
+    display: flex;
+    align-items: center;
+   margin-top: 10px;
+}
+
+.header-basketCount{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.secondHeaders{
+    background-color: #1a283f;
+    height: 35px;
+    gap: 125px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    
+    
+   
+}
+
+.secondHeaderOption{
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1rem;
+    cursor: pointer;
+   
+    
+}
+
+.secondHeaderOptionImage{
+   float: right;
+   height: 35px;
+   margin-top: -35px;
+   
+}

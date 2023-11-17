@@ -1,0 +1,225 @@
+<CurrencyFormat 
+    renderText={(value) => (
+      <>
+      <p className='subtotal-para'>Subtotal ( {basket?.length} item) : <strong>{total}</strong> </p>
+      <small className='subtotal-gift'>
+        <input type='checkbox'/> This order contains a gift
+      </small>
+      </>
+    )} 
+    decimalScale={2}
+    value={getBasketTotal(basket)}
+    displayType={"text"}
+    thousandSeparator={true}
+    prefix={"₹"}
+    />
+
+
+    emailRegex = /^[^\s@]+@[^\s@]+$/
+    password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
+
+
+
+    const payload =() => {
+
+        db
+        .collection('users')
+        .doc(user?.id)
+        .collection('order')
+        .set({
+            basket: basket,
+            
+        })
+
+        dispatch({
+            type: 'Empty_Basket'
+        })
+    }s
+
+
+
+
+    import React from 'react'
+import moment from 'moment/moment';
+import CheckoutProduct from '../CheckoutProduct';
+
+function Orders(props) {
+  return (
+    <div className='order'>
+        <h2>Order</h2>
+        <p>{moment.unix(props.order.data.created).format("MMMM Do YYYY, h:mma")}</p>
+            <p className="order__id">
+                <small>{props.order.id}</small>
+            </p>
+            {props.order.data.basket?.map(item => (
+                <CheckoutProduct
+                    id={item.id}
+                    title={item.title}
+                    image={item.image}
+                    price={item.price}
+                    rating={item.rating}
+                   
+                />
+            ))}
+    </div>
+  )
+}
+
+export default Orders
+
+//////////working coding//////////////////
+
+function items(){
+    db
+    .collection("users")
+    .doc(user?.uid)
+    .collection('orders')
+    .onSnapshot((snapshot) => {
+        let orderitems = [];
+        snapshot.docs.forEach((doc) => {
+            orderitems.push({
+                id:doc.id,
+                ...doc.data()
+            })
+        })
+        console.log(orderitems, 'what is in orders');
+    })
+ }
+ items();
+
+
+
+ useEffect(() => {
+if(user) {
+        db
+        .collection('users')
+        .doc(user?.uid)
+        .collection('orders')
+        .orderBy('created', 'desc')
+        .onSnapshot(snapshot => (
+            setOrders(snapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data()
+            })))
+
+        ))
+        console.log(orders);
+    } else {
+        setOrders([])
+    }
+
+  }, [user])
+
+
+///////////////working or not////////////
+  useEffect(() => {
+    if (user) {
+        db
+        .collection('users')
+        .doc(user?.uid)
+        .collection('orders')
+        .onSnapshot((snapshot) => {
+            setOrders(snapshot.docs.forEach((doc) => ({
+                id:doc.id,
+                ...doc.data()
+            })))
+        })
+    } else{
+        setOrders([])
+    }
+  }, [user])
+
+
+   const fetchPost = async () => {
+       
+        await getDocs(collection(db, "todos"))
+            .then((querySnapshot)=>{              
+                const newData = querySnapshot.docs
+                    .map((doc) => ({...doc.data(), id:doc.id }));
+                setTodos(newData);                
+                console.log(todos, newData);
+            })
+       
+    }
+  
+////////////// not working///////////////
+
+  const items = async() => {
+    db
+    .collection("users")
+    .doc(user?.uid)
+    .collection('orders')
+    .onSnapshot((querySnapshot) => {
+        const orderitems = querySnapshot.docs.map((doc) => ({
+           
+                id:doc.id,
+                ...doc.data()
+            
+        }));
+        setOrders(orderitems);
+        console.log(orders, 'what is in orders');
+    })
+ }
+ 
+////////////    working    /////////
+  function items(){
+    db
+    .collection("users")
+    .doc(user?.uid)
+    .collection('orders')
+    .onSnapshot((snapshot) => {
+        const orderitems = [];
+        snapshot.docs.forEach((doc) => {
+            orderitems.push({
+                id:doc.id,
+                ...doc.data()
+            })
+        })
+        console.log(orderitems, 'what is in orders');
+    })
+ }
+ 
+ 
+   useEffect(() => {
+    if (user) {
+        items()
+    } else{
+        {}
+    }
+   }, [user])
+   ////////////////////////////////////////
+
+
+ <div className='orders__order'>
+            {orderitems?.map((order,i )=> (
+                <Order key={i} order={order} />
+            ))}
+        </div>
+
+
+        /////////////////// order.js////////
+import React from 'react'
+import moment from 'moment/moment';
+import CheckoutProduct from '../CheckoutProduct';
+
+ export const Order = ({order}) => {
+  return (
+    <div className='order'>
+        <h2>Order</h2>
+            <p>{moment.unix(order.data.created).format("MMMM Do YYYY, h:mma")}</p>
+            <p className="order__id">
+                <small>{order.id}</small>
+            </p>
+            {order.data.basket?.map(item => (
+                <CheckoutProduct
+                    id={item.id}
+                    title={item.title}
+                    image={item.image}
+                    price={item.price}
+                    rating={item.rating}
+                    
+                />
+            ))}
+    </div>
+  )
+}

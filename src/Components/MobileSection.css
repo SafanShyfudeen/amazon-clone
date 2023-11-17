@@ -1,0 +1,11 @@
+.image1{
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.image2{
+    height: 144px;
+    width: 100%;
+    object-fit: contain;
+}

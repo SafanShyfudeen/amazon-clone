@@ -1,0 +1,21 @@
+.order {
+padding: 40px;
+margin: 20px 0;
+background-color: white;
+position: relative;
+}
+
+.order-id{
+    position: absolute;
+    top: 48px;
+    left: 150px;
+    font-weight: 500;
+}
+
+.order-total{
+    text-align: right;
+}
+
+.orders{
+    padding: 20px 80px;
+}
