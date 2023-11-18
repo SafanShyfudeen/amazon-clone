@@ -28,7 +28,7 @@ const  Orders = () => {
 } else {
     setOrders([])
 }
-  }, [])
+  }, [user])
   
     // console.log(order);
   

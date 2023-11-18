@@ -10,25 +10,31 @@ import { db } from './firebase'
 
 function Payment() {
     const [total, setTotal] = useState();
+  
     const [{basket, user} , dispatch] = useStateValue();
     const history = useNavigate();
 
     const payload = async (event) => {
         event.preventDefault();
-
-        db
-        .collection('users')
-        .doc(user?.uid)
-        .collection('orders')
-        .add({
-            basket:basket,
-            amount:total
-        })
-
-        dispatch({
-            type:'Empty_Basket'
-        })
-        history('/order')
+        if (user) {
+            db
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .add({
+                basket:basket,
+                amount:total
+            })
+    
+            dispatch({
+                type:'Empty_Basket'
+            })
+            history('/order')
+        } else {
+            history('/login')
+        }
+       
+        
         
     }
    
@@ -79,7 +85,7 @@ function Payment() {
                 </div>
                 <div className='payment-details'>
                     <PaymentIcon />
-                    <input type='text' placeholder='Card number' className='cardnum'/>
+                    <input type='text' placeholder='Card number' className='cardnum' />
                     <input type='text' placeholder='MM/YY CVV' className='cardnum'/>
                   
                 <div>

@@ -2,7 +2,7 @@ import amazon_image from '../image/amazon_image.png'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import { ShoppingBasket } from '@mui/icons-material';
-import {Link} from "react-router-dom"
+import {Link ,useNavigate} from "react-router-dom"
 import Great_Festival_image from '../image/Greate-Festival-image.jpg'
 import { useStateValue } from './UserContext';
 import { auth } from './firebase';
@@ -10,10 +10,12 @@ import { auth } from './firebase';
 
 function Header() {
     const [{basket, user}, dispatch] =useStateValue();
+    const history = useNavigate();
 
     const handleAuthentication = () => {
         if (user) {
             auth.signOut();
+            history("/")
         }
     }
 
@@ -43,7 +45,8 @@ function Header() {
 
         <div className='header-option'>
             <span className='header-optionLineOne'>Return</span>
-           <Link to='/order'> <span className='header-optionLineTwo'>&Orders</span></Link>
+           {user ? <Link to='/order'> <span className='header-optionLineTwo'>&Orders</span></Link> :
+           <Link to="/login"><span className='header-optionLineTwo'>&Orders</span> </Link>  }
         </div>
 
         <div className='header-option'>

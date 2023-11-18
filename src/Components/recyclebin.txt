@@ -223,3 +223,5 @@ import CheckoutProduct from '../CheckoutProduct';
     </div>
   )
 }
+
+/^\d+$/
