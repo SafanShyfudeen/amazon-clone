@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/amazon-clone/static/css/main.303978de.css",
-    "main.js": "/amazon-clone/static/js/main.1521f3e2.js",
-    "static/js/787.ebd7646a.chunk.js": "/amazon-clone/static/js/787.ebd7646a.chunk.js",
-    "static/media/mobilPhoneLanding_Image.gif": "/amazon-clone/static/media/mobilPhoneLanding_Image.92b22a4647130100a6f9.gif",
-    "static/media/amazon-landingpage.jpg": "/amazon-clone/static/media/amazon-landingpage.dcf449fa3521c584aff1.jpg",
-    "static/media/landing-image.jpg": "/amazon-clone/static/media/landing-image.f57f257f232afdbb0edc.jpg",
-    "static/media/amazon_image.png": "/amazon-clone/static/media/amazon_image.c258172cbbfae08cdc8d.png",
-    "static/media/Amazon-Great-Indian-Festival.avif": "/amazon-clone/static/media/Amazon-Great-Indian-Festival.992b62aaf218a8aea3f4.avif",
-    "static/media/amazon-black-icon.png": "/amazon-clone/static/media/amazon-black-icon.6324139ca44be458bcac.png",
-    "static/media/New-Bank-Stripe.jpg": "/amazon-clone/static/media/New-Bank-Stripe.9661578a63a132f3b086.jpg",
-    "static/media/New-Bank_image.jpg": "/amazon-clone/static/media/New-Bank_image.910c7b51e9ccdd768c45.jpg",
-    "static/media/Desktop-image.jpg": "/amazon-clone/static/media/Desktop-image.a972be787d8be0911a9e.jpg",
-    "static/media/mobil_Desktop.jpg": "/amazon-clone/static/media/mobil_Desktop.2156b39822ff63b12e7e.jpg",
-    "static/media/Desktop_CC379.jpg": "/amazon-clone/static/media/Desktop_CC379.3daedcf22245aae1b410.jpg",
-    "static/media/internationalDeals-image.jpg": "/amazon-clone/static/media/internationalDeals-image.9412c37e203d49afa29c.jpg",
-    "static/media/Headphones_Desktop_Cat_Card.jpg": "/amazon-clone/static/media/Headphones_Desktop_Cat_Card.05a931642f0e1ee382a0.jpg",
-    "static/media/Greate-Festival-image.jpg": "/amazon-clone/static/media/Greate-Festival-image.e7f60c9be51aaf1123ff.jpg",
-    "static/media/vivoV29-image.jpg": "/amazon-clone/static/media/vivoV29-image.eb9ae9b3474e61747ddf.jpg",
-    "index.html": "/amazon-clone/index.html",
-    "main.303978de.css.map": "/amazon-clone/static/css/main.303978de.css.map",
-    "main.1521f3e2.js.map": "/amazon-clone/static/js/main.1521f3e2.js.map",
-    "787.ebd7646a.chunk.js.map": "/amazon-clone/static/js/787.ebd7646a.chunk.js.map"
+    "main.css": "/static/css/main.303978de.css",
+    "main.js": "/static/js/main.b8c16521.js",
+    "static/js/787.ebd7646a.chunk.js": "/static/js/787.ebd7646a.chunk.js",
+    "static/media/mobilPhoneLanding_Image.gif": "/static/media/mobilPhoneLanding_Image.92b22a4647130100a6f9.gif",
+    "static/media/amazon-landingpage.jpg": "/static/media/amazon-landingpage.dcf449fa3521c584aff1.jpg",
+    "static/media/landing-image.jpg": "/static/media/landing-image.f57f257f232afdbb0edc.jpg",
+    "static/media/amazon_image.png": "/static/media/amazon_image.c258172cbbfae08cdc8d.png",
+    "static/media/Amazon-Great-Indian-Festival.avif": "/static/media/Amazon-Great-Indian-Festival.992b62aaf218a8aea3f4.avif",
+    "static/media/amazon-black-icon.png": "/static/media/amazon-black-icon.6324139ca44be458bcac.png",
+    "static/media/New-Bank-Stripe.jpg": "/static/media/New-Bank-Stripe.9661578a63a132f3b086.jpg",
+    "static/media/New-Bank_image.jpg": "/static/media/New-Bank_image.910c7b51e9ccdd768c45.jpg",
+    "static/media/Desktop-image.jpg": "/static/media/Desktop-image.a972be787d8be0911a9e.jpg",
+    "static/media/mobil_Desktop.jpg": "/static/media/mobil_Desktop.2156b39822ff63b12e7e.jpg",
+    "static/media/Desktop_CC379.jpg": "/static/media/Desktop_CC379.3daedcf22245aae1b410.jpg",
+    "static/media/internationalDeals-image.jpg": "/static/media/internationalDeals-image.9412c37e203d49afa29c.jpg",
+    "static/media/Headphones_Desktop_Cat_Card.jpg": "/static/media/Headphones_Desktop_Cat_Card.05a931642f0e1ee382a0.jpg",
+    "static/media/Greate-Festival-image.jpg": "/static/media/Greate-Festival-image.e7f60c9be51aaf1123ff.jpg",
+    "static/media/vivoV29-image.jpg": "/static/media/vivoV29-image.eb9ae9b3474e61747ddf.jpg",
+    "index.html": "/index.html",
+    "main.303978de.css.map": "/static/css/main.303978de.css.map",
+    "main.b8c16521.js.map": "/static/js/main.b8c16521.js.map",
+    "787.ebd7646a.chunk.js.map": "/static/js/787.ebd7646a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.303978de.css",
-    "static/js/main.1521f3e2.js"
+    "static/js/main.b8c16521.js"
   ]
 }
